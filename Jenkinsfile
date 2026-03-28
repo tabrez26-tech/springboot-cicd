@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Clone') {
-            steps {
-                git branch: 'main', url: 'https://github.com/tabrez26-tech/springboot-cicd.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 sh 'mvn clean package'
