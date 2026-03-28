@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone') {
             steps {
-                git 'https://github.com/tabrez26-tech/springboot-cicd.git'
+                git branch: 'main', url: 'https://github.com/tabrez26-tech/springboot-cicd.git'
             }
         }
 
